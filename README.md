@@ -1,108 +1,168 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Holiday Planner
 
-Welcome USER_NAME,
+'Holiday Planner' is a website that allows users to purchase flights and make hotel bookings separately or as a package deal. It aims to provide flight and hotel offers to users, allowing them to search by destination and order by the cheapest prices for the given dates. The site will be targeted toward people who are planning for a holiday.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<!-- TODO: ![Screenshot of 'Holiday Planner'](documentation/screenshots/evidence/design/title.png)-->
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Requirements
 
-## Gitpod Reminders
+Before jumping into the design process, requirements needed to be specified in order to know exactly what the blog should achieve to meet the assessment criteria.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The following functional requirements were decided on:
+1. The site must allow new users to sign up.
+1. The site must allow existing users to log in and out.
+1. The site must not permit access to restricted content prior to role-based login. 
+1. The site must have an admin portal.
+1. The site must display a navigable main menu.
+1. The site must be responsive.
+1. The site must allow users to perform CRUD operations on relevant models.
+1. The site must allow payments.
+1. The site must employ SEO and web marketing techniques.
 
-`python3 -m http.server`
+## Design
 
-A blue button should appear to click: _Make Public_,
+Evidence for this section has been placed in its own .md file which can be found [here](https://github.com/DebzDK/holiday-planner/blob/main/DESIGN.md).
 
-Another blue button should appear to click: _Open Browser_.
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Each feature listed below was chosen for this project to achieve its goal and its functional requirements.
 
-A blue button should appear to click: _Make Public_,
+### Existing features
 
-Another blue button should appear to click: _Open Browser_.
+<!--TODO: Add images -->
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Home page
 
-To log into the Heroku toolbelt CLI:
+    * Collapsable main menu
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    * Recent posts
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* FAQ/Help page
 
-------
+* Flight search bar
+    * Simple
+    * Advanced
 
-## Release History
+* User profile
+    * Account
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    * Stats
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Admin portal
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Future features
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Ability for users to reply to each other's comments on a blog post
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    It would be nice if users were able to reply to each other within a nested thread of conversation.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Ability for users to instant message one another
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    This would be a nice way to promote a sense of community by allowing users to communicate with each other whenever they wanted and also to share their own recipes.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Ability to send out an email to let users know when there's a new blogpost
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    This would have been a cool feature to implement to make it feel more like a real blog site.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Ability to report posts and comments
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    This would have also been a feature to implement to make it feel more like a real blog site.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Languages and technologies used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* Languages
+    * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - used to create the command line application
+    * [CSS3](https://en.wikipedia.org/wiki/CSS) - used Cascading Style Sheets to style HTML
+    * [Bootstrap](https://getbootstrap.com/) - used for responsive design
+    * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - used to make webpages interactive
+    * [jQuery](https://jquery.com/) - used for easy document tranversal and manipulation
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* Technologies
+    * [Adobe Color](https://color.adobe.com/) - used to create colour scheme for website
+    * [Autoprefixer](https://autoprefixer.github.io/) - used to automatically add vendor prefixes for browser compatibility
+    * [CompressJPEG](https://compressjpeg.com/) - used to compress all website images
+    * [EZGIF](https://ezgif.com/) - used to create the GIFs used in this README
+    * [Pexels](https://www.pexels.com/) - used to find free licence images
+    * [Amadeus for Developers](https://developers.amadeus.com/) - used to provide free flight and hotel information from their test data 
+    * [FlickR](https://www.flickr.com/) - used to get random images of destinations for display in the website
+    * [Stripe](https://stripe.com/gb) - used to facilitate payments
+    * [Django](https://www.djangoproject.com/) - used to build web app
+    * [PostgresSQL](https://www.postgresql.org/) - used to store relational data
+    * [Heroku](https://www.heroku.com/) - used to deploy project
+    * [Git](https://git-scm.com/) - used for version control
+    * [GitHub](https://github.com/) - used for internet hosting and version control through use of Git
+    * [Gitpod](https://gitpod.io/) - used as online IDE for software development
+        * The terminal was used to create branchs to work on before merging into the main branch. These branches have been preserved for the sake of the assessment, otherwise they would have been deleted after use.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+        <!--TODO: ![Screenshot of GitHub branches](documentation/screenshots/evidence/other/branches.png)-->
 
-------
+## Testing
 
-## FAQ about the uptime script
+Evidence for this section has been placed in its own .md file which can be found [here](https://github.com/DebzDK/baked-beauties-blog/blob/main/TESTING.md).
 
-**Why have you added this script?**
+## Deployment
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+The application was deployed via [Heroku](https://www.heroku.com/) using the steps listed below:
 
-**How will this affect me?**
+1. In Heroku, click 'New' then 'Create app'.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    ![Screeshot of deployment step 1](documentation/screenshots/evidence/deployment/deployment-step-1.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. Name the app and select your closest region.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    ![Screeshot of deployment step 2](documentation/screenshots/evidence/deployment/deployment-step-2.png)
 
-**So….?**
+1. Connect to Github and find the holiday-planner project.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    ![Screeshot of deployment step 3](documentation/screenshots/evidence/deployment/deployment-step-3.png)
 
-**Can I opt out?**
+1. Add Postgres add-on.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    ![Screeshot of deployment step 4](documentation/screenshots/evidence/deployment/deployment-step-4.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+1. Set up configuration variables.
 
-**Anything more?**
+    ![Screeshot of deployment step 5](documentation/screenshots/evidence/deployment/deployment-step-5.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+1. Choose either 'Enable Automatic Deployments' or 'Deploy' for manual deployments.
 
----
+    *Note: Automatic deployments were enabled for this project.*
 
-Happy coding!
+    ![Screeshot of deployment step 6](documentation/screenshots/evidence/deployment/deployment-step-6.png)
+
+The live link can be found here - https://my-holiday-planner.herokuapp.com/
+
+### Local deployment
+
+Since my work is in a publicly-accesible repository, it can be copied in 3 different ways:
+
+1. Cloning the repository
+
+    <code>git clone https://github.com/DebzDK/holiday-planner.git</code>
+
+1. Forking the repository
+
+    ![Fork repo image](documentation/screenshots/evidence/deployment/fork-it.png)
+
+1. Using Gitpod to create a new workspace for the repository with this button: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DebzDK/baked-beauties-blog)
+
+## Credits
+
+### Content
+
+All textual content on the site is written in my own words and of my own opinion, except for flight and hotel information sourced from [Amadeus](https://developers.amadeus.com/) response data or the corresponding hotel's website.
+
+### Media
+
+All images were compressed using [Compress JPEG](https://compressjpeg.com/).
+All flight destination images were sourced from [FlickR](https://flickr.com/).
+
+Purpose | Credit | Source
+------------ | ------------- | -------------
+Logo | [Uniconlabs](https://www.flaticon.com/authors/uniconlabs) | [Flat icon](https://www.flaticon.com/premium-icon/airplane-mode_3178302)
+
+## Acknowledgements
+
+Thanks to my mentor [Tim Nelson](https://github.com/TravelTimN) for encouraging me to center my projects around my interests!
+
+And thank you to Code Institute for giving me new tools to work with 😊.
